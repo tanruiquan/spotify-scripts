@@ -1,3 +1,6 @@
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -5,7 +8,6 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * pip
   ```sh
     pip install python-dotenv
@@ -23,7 +25,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
     SPOTIPY_CLIENT_ID="YOUR SPOTIPY CLIENT ID"
     SPOTIPY_CLIENT_SECRET="YOUR SPOTIPY CLIENT SECRET"
-    SPOTIPY_REDIRECT_URI="YOU8R SPOTIPY REDIRECT URI"
+    SPOTIPY_REDIRECT_URI="YOUR SPOTIPY REDIRECT URI"
     MY_PLAYLIST_ID="FIRST PLAYLIST ID"
     YOUR_PLAYLIST_ID="SECOND PLAYLIST ID"
     OUR_PLAYLIST_ID="NEW PLAYLIST ID"
