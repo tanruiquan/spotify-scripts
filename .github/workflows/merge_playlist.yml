@@ -4,6 +4,7 @@
 name: Merge playlist
 
 on:
+  workflow_dispatch:
   schedule:
     # Run every Tuesday at 0 UTC
     - cron: '0 0 * * 2'
