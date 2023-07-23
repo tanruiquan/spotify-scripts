@@ -10,7 +10,16 @@ from spotipy.oauth2 import SpotifyOAuth
 load_dotenv()
 
 SCOPE = "playlist-modify-public"
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=SCOPE))
+# Authenticate
+auth_manager = SpotifyOAuth(
+    scope=SCOPE,
+    client_id=os.getenv("SPOTIPY_CLIENT_ID"),
+    client_secret=os.getenv("SPOTIPY_CLIENT_SECRET"),
+    redirect_uri=os.getenv("SPOTIPY_REDIRECT_URI"),
+    username=os.getenv("USERNAME")
+)
+auth_manager.refresh_access_token(os.getenv("REFRESH_TOKEN"))
+sp = spotipy.Spotify(auth_manager=auth_manager)
 
 
 def get_all_tracks(playlist):
